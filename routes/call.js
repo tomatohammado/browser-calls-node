@@ -3,7 +3,7 @@ var router = express.Router();
 var twilio = require('twilio');
 var VoiceResponse = twilio.twiml.VoiceResponse;
 
-// POST /calls/connect
+// POST /call/connect
 router.post('/connect', twilio.webhook({validate: false}), function(req, res, next) {
   var phoneNumber = req.body.phoneNumber;
   var callerId = process.env.TWILIO_PHONE_NUMBER;
