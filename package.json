@@ -24,7 +24,9 @@
     "twiml",
     "webhooks"
   ],
-  "engines" : { "node" : ">=4.6.2" },
+  "engines": {
+    "node": ">=4.6.2"
+  },
   "dependencies": {
     "body-parser": "~1.15.2",
     "connect-flash": "^0.1.1",
