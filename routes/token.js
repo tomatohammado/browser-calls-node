@@ -7,7 +7,7 @@ router.post('/generate', function (req, res) {
   var page = req.body.page;
   var clientName = (page == "/dashboard"? "support_agent" : "customer");
 
-  console.log(`logging Account SID: ${process.env.TWILIO_ACCOUNT_SID}`);
+  // console.log(`logging Account SID: ${process.env.TWILIO_ACCOUNT_SID}`);
 
   var capability = new ClientCapability({
       accountSid: process.env.TWILIO_ACCOUNT_SID,
